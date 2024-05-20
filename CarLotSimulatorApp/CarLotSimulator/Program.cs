@@ -11,6 +11,8 @@ namespace CarLotSimulator
 
             var carLotOne = new CarLot();
 
+            Console.WriteLine($"The number of cars in the lot is {CarLot._numberOfCars}\n\n\n");
+
             //TODO
 
             //Create a seperate class file called Car
@@ -30,6 +32,7 @@ namespace CarLotSimulator
             myCar.IsDrivable = true;
 
             carLotOne.ParkingLot.Add(myCar);
+            Console.WriteLine($"The number of cars in the lot is {CarLot._numberOfCars}\n\n\n");
 
 
             // Object Intializer
@@ -47,11 +50,13 @@ namespace CarLotSimulator
 
             };
             carLotOne.ParkingLot.Add(yourCar);
+            Console.WriteLine($"The number of cars in the lot is {CarLot._numberOfCars}\n\n\n");
 
             //using a custom constructor
 
             Car laurensCar = new Car(2019, "Kia", "Soul", "Chug Chug", "AAA", true);
             carLotOne.ParkingLot.Add(laurensCar);
+            Console.WriteLine($"The number of cars in the lot is {CarLot._numberOfCars}\n\n\n");
 
             carLotOne.CarChecker();
 

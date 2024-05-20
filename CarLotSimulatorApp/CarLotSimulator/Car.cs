@@ -34,7 +34,7 @@ namespace CarLotSimulator
 
         public Car()
         {
-            
+            CarLot._numberOfCars++;
         }
 
         public Car(int year, string make, string model, string enginenoise, string honkNoise, bool isDrivable)
@@ -45,6 +45,7 @@ namespace CarLotSimulator
             Enginenoise = enginenoise;
             HonkNoise = honkNoise;
             IsDrivable = isDrivable;
+            CarLot._numberOfCars++;
             
         }
 
